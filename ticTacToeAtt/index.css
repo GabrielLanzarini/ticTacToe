@@ -1,0 +1,49 @@
+*{
+    margin: 0;
+    font-family: "Roboto";
+}
+
+body{
+    background-color: #202529;
+}
+
+h1{
+    font-weight: bold;
+}
+
+h2{
+    font-weight: 300;
+}
+
+h1,h2{
+    color: #A1B4C4;
+}
+
+.divAll{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.scoreTurnDiv{
+    align-self: flex-start;
+}
+
+.gameBlocks{
+    width: 540px;
+    height: 540px;
+    background-color: black;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.blockPlay{
+    width: 175px;
+    height: 175px;
+    margin: 2px;
+    border-radius: 10px;
+    background-color: bisque;
+}
