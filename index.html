@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,6 +8,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap" rel="stylesheet">
+
+  
 
     <link rel="stylesheet" href="index.css">
 
@@ -18,7 +20,6 @@
 </head>
 <body>
 
-
     <div class="divAll">
 
         <div class="scoreTurnDiv">
@@ -26,31 +27,37 @@
             <div class="scoreDiv divPrin">
                 <h1 class="scoreTitle">Pontuação</h1>
                 <div class="playerScoreDiv">
-                    <h2 class="scoreText">Jogador 1: 0</h2>
-                    <h2 class="scoreText">Jogador 2: 0</h2>
+                    <h2 id="scoreX" class="scoreText">X: 0</h2>
+                    <h2 id="scoreO"  class="scoreText">O: 0</h2>
                 </div>
             </div>
     
             <div class="playerTurnDiv divPrin">
-                <h1 class="playerTurnText">Vez de X</h1>
+                <h1 class="playerTurnText">Vez de</h1>
+                <div class="vezDeDiv">
+                    <h1 id="turnoAviso" class="formaEstilo">X</h1>
+                </div>
             </div>
 
+            <button id="turnoChange" class="botaoZerar">Mudar turno</button>
+            <button id="zerarPonto" class="botaoZerar">Zerar pontos</button>
         </div>
 
-        <div class="gameBlocks">
-            <div>X</div>
-            <div>O</div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
+        <div id="allDivGame" class="gameBlocks">
+            <div id="l1c1"></div>
+            <div id="l1c2"></div>
+            <div id="l1c3"></div>
+
+            <div id="l2c1"></div>
+            <div id="l2c2"></div>
+            <div id="l2c3"></div>
+
+            <div id="l3c1"></div>
+            <div id="l3c2"></div>
+            <div id="l3c3"></div>
         </div>
-
-
     </div>
     
 </body>
+<script src="script.js"></script>
 </html>
