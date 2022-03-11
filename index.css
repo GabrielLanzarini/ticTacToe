@@ -96,6 +96,20 @@ h1,h2{
     align-items: center;
 }
 
+.divBotoes{
+    display: flex;
+    flex-direction: column;
+    height: 200px;
+    justify-content: space-around;
+}
+
+.divPontPlac{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 280px;
+}
+
 .scoreDiv{
     height: 135px;
 }
@@ -140,4 +154,40 @@ h1,h2{
 .formaEstilo{
     color: #1BC6B4;
     font-size: 45px;
+}
+
+@media screen and (max-width: 825px) {
+    
+    .divAll {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .scoreTurnDiv {
+        display: flex;
+        flex-direction: row;
+        width: 540px;
+        margin: 0;
+        height: 300px;
+    }
+
+    .divBotoes{
+        display: flex;
+        flex-direction: column;
+        height: 70%;
+    }
+
+    .divPontPlac{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 280px;
+    }
+
+    .botaoZerar{
+        width: 215px;
+    }
+
 }
