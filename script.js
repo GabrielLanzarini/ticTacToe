@@ -9,6 +9,23 @@ var o6 = document.getElementById("l2c3");
 var o7 = document.getElementById("l3c1");
 var o8 = document.getElementById("l3c2");
 var o9 = document.getElementById("l3c3");
+var objeto = [o1,o2,o3,o4,o5,o6,o7,o8,o9]
+
+var blockClicado = document.querySelectorAll('.botaoJogo');
+
+blockClicado.forEach(function(e){
+    e.addEventListener('click',function(){
+        if (turno == "X"){
+            e.textContent = "X"
+            turno = "O"
+            turnoText.textContent = "O"
+        } else if(turno == "O"){
+            e.textContent = "O"
+            turno = "X"
+            turnoText.textContent = "X"
+        }
+    })
+})
 
 var botaoZerar = document.getElementById("zerarPonto");
 
@@ -19,64 +36,11 @@ var pontoOplacar = document.getElementById("scoreO");
 var pontoX = null;
 var pontoO = null;
 
-
 var turno = "X";
 
 var turnoText = document.getElementById("turnoAviso");
 
-var objeto = [o1,o2,o3,o4,o5,o6,o7,o8,o9]
-
-o1.addEventListener('click', jogarBot1);
-o2.addEventListener('click', jogarBot2);
-o3.addEventListener('click', jogarBot3);
-o4.addEventListener('click', jogarBot4);
-o5.addEventListener('click', jogarBot5);
-o6.addEventListener('click', jogarBot6);
-o7.addEventListener('click', jogarBot7);
-o8.addEventListener('click', jogarBot8);
-o9.addEventListener('click', jogarBot9);
-
 document.getElementById("turnoChange").addEventListener('click', mudarTurno);
-
-function jogarBot1(){
-     verificaTurno(o1)
-    console.log(o1.textContent)}
-
-function jogarBot2(){
-    verificaTurno(o2)}
-
-function jogarBot3(){
-    verificaTurno(o3)}
-
-function jogarBot4(){
-    verificaTurno(o4)}
-
-function jogarBot5(){
-    verificaTurno(o5)}
-
-function jogarBot6(){
-    verificaTurno(o6)}
-
-function jogarBot7(){
-    verificaTurno(o7)}
-
-function jogarBot8(){
-    verificaTurno(o8)}
-
-function jogarBot9(){
-    verificaTurno(o9)}
-
-function verificaTurno(obj){
-    if (turno == "X"){
-        obj.textContent = "X"
-        turno = "O"
-        turnoText.textContent = "O"
-    } else if(turno == "O"){
-        obj.textContent = "O"
-        turno = "X"
-        turnoText.textContent = "X"
-    }
-}
 
 function mudarTurno(){
     switch(turno){
